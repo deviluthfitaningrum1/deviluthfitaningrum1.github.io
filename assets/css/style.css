@@ -285,6 +285,12 @@ h6 {
   letter-spacing: 1px;
   text-shadow: 1px 1px black;
 }
+#hero span {
+  color: white;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px black;
+}
 
 @media (min-width: 1024px) {
   #hero {
