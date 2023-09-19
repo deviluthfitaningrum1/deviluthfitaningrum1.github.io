@@ -363,6 +363,7 @@ section {
 .about .content ul {
   list-style: none;
   padding: 0;
+  align="justify";
 }
 
 .about .content ul li {
@@ -384,6 +385,7 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+  align="justify";
 }
 
 /*--------------------------------------------------------------
