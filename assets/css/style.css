@@ -29,7 +29,9 @@ h2,
 h3,
 h4,
 h5,
-
+h6 {
+  font-family: "Raleway", sans-serif;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -95,7 +97,7 @@ h5,
   font-weight: 600;
   -moz-text-align-last: center;
   text-align-last: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #header .profile h1 a,
@@ -267,14 +269,13 @@ h5,
   line-height: 56px;
   color: black;
   text-shadow: 1px 1px white;
-  font-family: "Open Sans", sans-serif;
 }
 
 #hero p {
   color: black;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
@@ -282,14 +283,12 @@ h5,
   padding-bottom: 4px;
   letter-spacing: 1px;
   text-shadow: 1px 1px black;
-  font-family: "Open Sans", sans-serif;
 }
 #hero span {
   color: white;
   padding-bottom: 4px;
   letter-spacing: 1px;
   text-shadow: 1px 1px black;
-  font-family: "Open Sans", sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -413,12 +412,12 @@ section {
   font-weight: 700;
   color: #050d18;
   margin-left: 60px;
-  font-family: "Open Sans", sans-serif;
 }
 
 .facts .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #122f57;
 }
@@ -429,8 +428,8 @@ section {
   margin-top: 20px;
   color: #122f57;
   font-size: 15px;
+  font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
-  font-family: "Open Sans", sans-serif;
 }
 
 .facts .count-box a:hover {
@@ -445,7 +444,6 @@ section {
   display: block;
   background: none;
   border-radius: 0;
-  font-family: "Open Sans", sans-serif;
 }
 
 .skills .progress .skill {
@@ -454,8 +452,8 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
+  font-family: "Poppins", sans-serif;
   color: #050d18;
-  font-family: "Open Sans", sans-serif;
 }
 
 .skills .progress .skill .val {
@@ -491,7 +489,6 @@ section {
   margin-top: -2px;
   border-left: 2px solid #1f5297;
   position: relative;
-  font-family: "Open Sans", sans-serif;
 }
 
 .resume .resume-item h4 {
@@ -499,9 +496,9 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
   color: #050d18;
   margin-bottom: 10px;
-  font-family: "Open Sans", sans-serif;
 }
 
 .resume .resume-item h5 {
