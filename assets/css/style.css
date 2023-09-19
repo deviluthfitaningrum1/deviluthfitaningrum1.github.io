@@ -286,10 +286,10 @@ h6 {
   text-shadow: 1px 1px black;
 }
 #hero span {
-  color: black;
+  color: white;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  text-shadow: 1px 1px white;
+  text-shadow: 1px 1px black;
 }
 
 @media (min-width: 1024px) {
