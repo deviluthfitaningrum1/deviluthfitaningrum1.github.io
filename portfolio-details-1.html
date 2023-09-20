@@ -164,12 +164,12 @@
                 <div class="col-lg-12">
                   <p><b>Tools: MySQL<i class="bx bxl-postgresql"></i></b>
                   <br/>Normalize raw data
-                  <br/>mysql>select * from pengguna
-                  <br/>mysql>select * from pembelian
-                  <br/>mysql>select * from game
-                  <br/>mysql>select * from beligame
-                  <br/>mysql>select * from genre
-                  <br/>mysql>select * from gamegenre
+                  <br/><b>mysql></b>select * from pengguna;
+                  <br/><b>mysql></b>select * from pembelian;
+                  <br/><b>mysql></b>select * from game;
+                  <br/><b>mysql></b>select * from beligame;
+                  <br/><b>mysql></b>select * from genre;
+                  <br/><b>mysql></b>select * from gamegenre;
                   </p>
                 </div>
                 <div class="col-lg-12">
@@ -194,7 +194,77 @@
                   </div>
                 </div>
               <li>Perform Query</li>
+              <br/>
+                <div class="col-lg-12">
+                  <p><b>Tools: MySQL<i class="bx bxl-postgresql"></i></b>
+                  <br/><b>mysql></b>select nama_game, tanggal_rilis from game order by tanggal_rilis desc limit 5;
+                  <br/><b>mysql></b>select game.nama_game, pembelian.tanggal_pembelian from game join beligame on game.id_game=beligame.id_game join pembelian on pembelian.id_pembelian=beligame.id pembelian order by tanggal pembelian desc limit 5;
+                  <br/><b>mysql></b>select pengguna.nama_pengguna, count(*) from pengguna join pembelian on pengguna.id_pengguna=pembelian.id_pengguna join beligame on pembelian.id_pembelian=beligame.id_pembelian group by nama_pengguna order by count(*) asc limit 3;
+                  <br/><b>mysql></b>select game.nama_game, count (*) from game join beligame on game.id_game=beligame.id_game group by nama_game order by count (*) desc limit 4;
+                  <br/><b>mysql></b>select game.nama_game, count (*) from game join beligame on game.id_game=beligame.id_game group by nama_game order by count (*) asc limit 4;
+                  <br/><b>mysql></b>select game.nama_game, genre.genre from game join gamegenre on game.id_game=gamegenre.id_game join genre on genre.id_genre=gamegenre.id_genre where gamegenre.id_game in(select id_game from gamegenre where genre='action' or genre='adventure');
+                  <br/><b>mysql></b>select genre.genre, count (*) from genre join gamegenre on genre.id_genre=gamegenre.id_genre join beligame on gamegenre.id_game=beligame.id_game group by genre.genre order by count (*) desc limit 1;
+                  </p>
+                </div>
+                <div class="col-lg-12">
+                  <div class="portfolio-details-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+      
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-7.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-8.jpg" alt="">
+                      </div>
+      
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
               <li>Data storytelling</li>
+              <br/>
+                <div class="col-lg-12">
+                  <b>Tools: MySQL<i class="bx bxl-postgresql"></i></b>
+                  <br/><b>5 latest games</b> which can display in <b>recommended new games</b>: borderlands, respect, ori, melvor idle, monster hunter.
+                  <br/><b>5 last purchased games</b> which can display in <b>recommended games</b>: the crew, pacman, cuphead, neighbours, gears.
+                  <br/><b>Promo notifications</b> can be sent <b>to the fewest game users</b>: Ridwan Ardian, Anindya Luth, Aqilla Citrani.
+                  <br/><b>4 the most purchased games</b> can display in <b>best seller games</b>: neighbours, pacman, shenmue, gears.
+                  <br/><b>4 the least purchased games</b> can display in <b>promo games</b>: need for speed, tabs, portal, real politiks.
+                  <br/><b>3 action and adventure games</b> can display in <b>personalized recommendations for users</b> who like action and adventure genre: shenmue, gears, ori, skyrim, monster hunter, jump forces, metro exodus.
+                  <br/><b>the most purchased genre</b> can display in <b>best seller genre</b>: action.
+                </div>
+                <div class="col-lg-12">
+                  <div class="portfolio-details-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+        
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-9.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-10.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-11.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-12.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                       <img src="assets/img/portfolio/portfolio-details-13.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-14.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-15.jpg" alt="">
+                      </div>
+                      </div>
+                     <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
             </ol>
           </div>
         </div>
