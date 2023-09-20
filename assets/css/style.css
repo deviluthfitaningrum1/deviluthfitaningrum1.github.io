@@ -267,22 +267,23 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: black;
-  text-shadow: 1px 1px white;
+  color: #fff;
+  /*text-shadow: 1px 1px black;*/
 }
 
 #hero p {
-  color: black;
+  color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Open Sans", sans-serif;
+  /*text-shadow: 1px 1px black;*/
 }
 
 #hero p span {
-  color: white;
+  color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  text-shadow: 1px 1px black;
+  /*text-shadow: 1px 1px black;*/
   border-bottom: 3px solid #149ddd;
 }
 
