@@ -98,7 +98,7 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                  <img src="assets/img/portfolio/portfolio-details-16.jpg" alt="">
                 </div>
 
               </div>
@@ -110,10 +110,10 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: SQL Skillset</li>
-                <li><strong>Description</strong>: Final Project Practicum</li>
-                <li><strong>Project date</strong>: 19 November, 2020</li>
-                <li><strong>Project URL</strong>: <a href="https://github.com/deviluthfitaningrum1/steam-sql-tbd">Github</a></li>
+                <li><strong>Category</strong>: Python Skillset</li>
+                <li><strong>Description</strong>: Midterm Project Course</li>
+                <li><strong>Project date</strong>: 26 March-08 April, 2020</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/deviluthfitaningrum1/analisis-corona-2020/">Github</a></li>
               </ul>
             </div>
           </div>
@@ -121,36 +121,79 @@
         </div>
         <div class="row gy-4">
           <div class="portfolio-description">
-            <h2>Data analytics of steam platform use SQL database engineering</h2>
+            <h2>Data regression analysis of coronavirus active cases and total deaths in 9 countries.</h2>
             <p align="justify">
-            Steam is an online platform which provide distribution service of digital video games. Users can easily install and play games that have been purchased using multiple devices connected to the user's Steam account.
+              Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus. Regression approach analysis was used to describe the growth of active cases and total deaths due to coronavirus in 9 countries.
             </p>
-            <strong>SQL Skillset:</strong>
+            <strong>Python Skillset:</strong>
             <ol>
-              <li>Basic: basic syntax, basic function and operators, ordering and alias.</li>
-              <li>Intermediate: data manipulation, SQL aggregation functions. SQL joins, formatting and cleaning in SQL.</li>
-              <li>Advanced: SQL database,SQL date type, SQL date format.</li>
+              <li>Basic: data cleaning and preparation (Numpy, Pandas, Matplotlib).</li>
+              <li>Intermediate: Exploratory Data Analysis/Visualization.</li>
+              <li>Advanced: regression analysis, correlation analysis.</li>
             </ol>
             <strong>Step:</strong>
             <ol>
-              <li>Design Entity Relationship Diagram</li>
+              <li>Data acquisition</li>
               
                 <br/>
                 <div class="col-lg-12">
-                  <p><b>Tools: Draw.io<i class="bi-diagram-2"></i></b>
-                  <br/><b>Pengguna</b>: id_pengguna, nama_pengguna, email, no_hp, country
-                  <br/><b>Pembelian</b>: id_pembelian, tanggal_pembelian, pay_method, id_pengguna
-                  <br/><b>BeliGame</b>: id_pembelian, id_game
-                  <br/><b>Game</b>: id_game, nama_game, tanggal_rilis, harga
-                  <br/><b>Genre</b>: id_genre, genre
-                  <br/><b>GameGenre</b>: id_game, id_genre</p>
+                  <p><b>Tools: Jupyter Notebook<i class="bx-data"></i></b>
+                  <br/>Data from the first case (day 0) in every country to March 26 2020 (The first cases in each country started on different dates).
+                  <br/>Data from site <a href="https://www.worldometers.info/coronavirus/">worldometer</a>
+                  <br/>Data Active Cases and Total Deaths in Amerika Serikat, Australia, Indonesia, Iran, Italia, Jerman, Korea Selatan, Spanyol, Tiongkok.
+                  </p>
+                  <strong>Code:</strong>
+                  <p>
+                    <br/>import matplotlib.pyplot as plt
+                    <br/>import numpy as np
+                    <br/>import pandas as pd
+                    <br/>date=[]
+                    <br/>for jan in range (22,31+1) :
+                        <br/>date.append(str(jan)+ " Jan")
+                        <br/>for feb in range (1, 29+1) :
+                        <br/>date.append(str(feb)+ " Feb")
+                        <br/>for mar in range (1, 26+1) :
+                        <br/>date.append(str(mar)+ " Mar")
+                        <br/>day = []
+                        <br/>for i in range(0, len(date)) :
+                            <br/>day.append(i)
+                            <br/>tabel = pd.DataFrame({
+                            <br/>  'Day' : day,
+                            <br/>  'Date' : date,
+                            <br/>  'Active Cases or Total Deaths' : y,})
+                          <br/>tabel
+                  </p>
                 </div>
                 <div class="col-lg-12">
                   <div class="portfolio-details-slider swiper">
                     <div class="swiper-wrapper align-items-center">
       
                       <div class="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                        <img src="assets/img/portfolio/portfolio-details-17.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-18.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-19.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-20.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-21.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-22.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-23.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-24.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-25.jpg" alt="">
                       </div>
       
                     </div>
