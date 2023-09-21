@@ -139,30 +139,9 @@
                 <div class="col-lg-12">
                   <p><b>Tools: Jupyter Notebook<i class="bx-data"></i></b>
                   <br/>Data from the first case (day 0) in every country to March 26 2020 (The first cases in each country started on different dates).
-                  <br/>Data from site <a href="https://www.worldometers.info/coronavirus/">worldometer</a>
+                  <br/>Data from site <a href="https://www.worldometers.info/coronavirus/">worldometer</a>.
                   <br/>Data Active Cases and Total Deaths in Amerika Serikat, Australia, Indonesia, Iran, Italia, Jerman, Korea Selatan, Spanyol, Tiongkok.
-                  </p>
-                  <strong>Code:</strong>
-                  <p>
-                    <br/>import matplotlib.pyplot as plt
-                    <br/>import numpy as np
-                    <br/>import pandas as pd
-                    <br/>date=[]
-                    <br/>for jan in range (22,31+1) :
-                        <br/>date.append(str(jan)+ " Jan")
-                        <br/>for feb in range (1, 29+1) :
-                        <br/>date.append(str(feb)+ " Feb")
-                        <br/>for mar in range (1, 26+1) :
-                        <br/>date.append(str(mar)+ " Mar")
-                        <br/>day = []
-                        <br/>for i in range(0, len(date)) :
-                            <br/>day.append(i)
-                            <br/>tabel = pd.DataFrame({
-                            <br/>  'Day' : day,
-                            <br/>  'Date' : date,
-                            <br/>  'Active Cases or Total Deaths' : y,})
-                          <br/>tabel
-                  </p>
+                  
                 </div>
                 <div class="col-lg-12">
                   <div class="portfolio-details-slider swiper">
@@ -202,17 +181,12 @@
                 </div>
                 
 
-              <li>Exploratory Data Analysis</li>
+              <li>Data visualization</li>
               <br/>
                 <div class="col-lg-12">
-                  <p><b>Tools: MySQL<i class="bx bxl-postgresql"></i></b>
-                  <br/>Normalize raw data
-                  <br/><b>mysql></b>select * from pengguna;
-                  <br/><b>mysql></b>select * from pembelian;
-                  <br/><b>mysql></b>select * from game;
-                  <br/><b>mysql></b>select * from beligame;
-                  <br/><b>mysql></b>select * from genre;
-                  <br/><b>mysql></b>select * from gamegenre;
+                  <p><b>Tools: Jupyter Notebook<i class="bx-data"></i></b>
+                  <br/>Visualize Data Plot
+                  
                   </p>
                 </div>
                 <div class="col-lg-12">
@@ -220,33 +194,42 @@
                     <div class="swiper-wrapper align-items-center">
       
                       <div class="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                        <img src="assets/img/portfolio/portfolio-details-26.jpg" alt="">
                       </div>
                       <div class="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-details-4.jpg" alt="">
+                        <img src="assets/img/portfolio/portfolio-details-27.jpg" alt="">
                       </div>
                       <div class="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-details-5.jpg" alt="">
+                        <img src="assets/img/portfolio/portfolio-details-28.jpg" alt="">
                       </div>
                       <div class="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-details-6.jpg" alt="">
+                        <img src="assets/img/portfolio/portfolio-details-29.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-30.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-31.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-32.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-33.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-34.jpg" alt="">
                       </div>
       
                     </div>
                     <div class="swiper-pagination"></div>
                   </div>
                 </div>
-              <li>Perform Query</li>
+              <li>Exploratory Data Analysis/Visualization</li>
               <br/>
                 <div class="col-lg-12">
-                  <p><b>Tools: MySQL<i class="bx bxl-postgresql"></i></b>
-                  <br/><b>mysql></b>select nama_game, tanggal_rilis from game order by tanggal_rilis desc limit 5;
-                  <br/><b>mysql></b>select game.nama_game, pembelian.tanggal_pembelian from game join beligame on game.id_game=beligame.id_game join pembelian on pembelian.id_pembelian=beligame.id pembelian order by tanggal pembelian desc limit 5;
-                  <br/><b>mysql></b>select pengguna.nama_pengguna, count(*) from pengguna join pembelian on pengguna.id_pengguna=pembelian.id_pengguna join beligame on pembelian.id_pembelian=beligame.id_pembelian group by nama_pengguna order by count(*) asc limit 3;
-                  <br/><b>mysql></b>select game.nama_game, count (*) from game join beligame on game.id_game=beligame.id_game group by nama_game order by count (*) desc limit 4;
-                  <br/><b>mysql></b>select game.nama_game, count (*) from game join beligame on game.id_game=beligame.id_game group by nama_game order by count (*) asc limit 4;
-                  <br/><b>mysql></b>select game.nama_game, genre.genre from game join gamegenre on game.id_game=gamegenre.id_game join genre on genre.id_genre=gamegenre.id_genre where gamegenre.id_game in(select id_game from gamegenre where genre='action' or genre='adventure');
-                  <br/><b>mysql></b>select genre.genre, count (*) from genre join gamegenre on genre.id_genre=gamegenre.id_genre join beligame on gamegenre.id_game=beligame.id_game group by genre.genre order by count (*) desc limit 1;
+                  <p><b>Tools: Jupyter Notebook<i class="bx-data"></i></b>
+                    <br/>Analyze dan visualize exponential, quadrat, and polinomial regression equation with correlation coefficient.
                   </p>
                 </div>
                 <div class="col-lg-12">
@@ -254,10 +237,13 @@
                     <div class="swiper-wrapper align-items-center">
       
                       <div class="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-details-7.jpg" alt="">
+                        <img src="assets/img/portfolio/portfolio-details-35.jpg" alt="">
                       </div>
                       <div class="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-details-8.jpg" alt="">
+                        <img src="assets/img/portfolio/portfolio-details-36.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio/portfolio-details-37.jpg" alt="">
                       </div>
       
                     </div>
@@ -265,51 +251,44 @@
                   </div>
                 </div>
               <li>Data storytelling</li>
-              <br/>
+                <br/>
                 <div class="col-lg-12">
-                  <b>Tools: MySQL<i class="bx bxl-postgresql"></i></b>
-                  <br/><b>5 latest games</b> which can display in <b>recommended new games</b>: borderlands, respect, ori, melvor idle, monster hunter.
-                  <br/><b>5 last purchased games</b> which can display in <b>recommended games</b>: the crew, pacman, cuphead, neighbours, gears.
-                  <br/><b>Promo notifications</b> can be sent <b>to the fewest game users</b>: Ridwan Ardian, Anindya Luth, Aqilla Citrani.
-                  <br/><b>4 the most purchased games</b> can display in <b>best seller games</b>: neighbours, pacman, shenmue, gears.
-                  <br/><b>4 the least purchased games</b> can display in <b>promo games</b>: need for speed, tabs, portal, real politiks.
-                  <br/><b>3 action and adventure games</b> can display in <b>personalized recommendations for users</b>: shenmue, gears, ori.
-                  <br/><b>the most purchased genre</b> can display in <b>best seller genre</b>: action.
-                </div>
-                <div class="col-lg-12">
-                  <div class="portfolio-details-slider swiper">
-                    <div class="swiper-wrapper align-items-center">
-        
-                      <div class="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-details-9.jpg" alt="">
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-details-10.jpg" alt="">
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-details-11.jpg" alt="">
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-details-12.jpg" alt="">
-                      </div>
-                      <div class="swiper-slide">
-                       <img src="assets/img/portfolio/portfolio-details-13.jpg" alt="">
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-details-14.jpg" alt="">
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="assets/img/portfolio/portfolio-details-15.jpg" alt="">
-                      </div>
-                      </div>
-                     <div class="swiper-pagination"></div>
-                    </div>
-                  </div>
+                  <b>Tools: Jupyter Notebook<i class="bx-data"></i></b>
+                  <p>Search best correlation coefficient.</p>
+                  <br/><b>Tiongkok</b>: Growth Active Cases (quadrat and polinomial regression equation with orde 6th), Decay Active Cases (exponential and polinomial regression equation with orde 5th), Total Deaths (quadrat and polinomial regression equation with orde 5th).
+                  <br/><p>China was the first country with positive for the Covid-19 virus. On the 1st day, there were 554 Active Cases, while the total deaths were only 17 cases. Researcher continues conducted research on the new virus and was able to identify it on day 6 (a week from the first case). The spread of the virus continues to increase because China is the most large population in the world. Then, the government adopted a lockdown and screening policy starting at the end January. Therefore, the Active Cases that occurred in China experienced a turning point on the 28th day, February 18 2020. Apart from that, the number of deaths per day as well decreased after the policy was implemented.</p>
+                  <br/>
+                  <br/><b>Korea Selatan</b>: Growth Active Cases (quadrat and polinomial regression equation with orde 6th), Decay Active Cases (exponential and polinomial regression equation with orde 5th), Total Deaths (quadrat and polinomial regression equation with orde 5th).
+                  <br/><p>South Korea did not implement a lockdown policy, but did mass testing since the end of February, social distancing since March 21 2020, and data collection to prevent people who have not been infected from contracting the Covid virus in red zones. Therefore, the Active Cases that occurred in South Korea experienced a turning point on the 26th day, March 12 2020. The number of deaths in Korea is relatively small compared to other countries because the population over 65 years old is small, only around 4-5%. Although Active cases are quite high due to population density.</p>
+                  <br/>
+                  <br/><b>Italia</b>: Growth Active Cases (quadrat and polinomial regression equation with orde 5th), Total Deaths (quadrat and polinomial regression equation with orde 5th).
+                  <br/><p>Italy is experienced very high cases of both Active Cases and Total Deaths. This is because 23% of the population is over 65 years old. Italy just went into lockdown on March 24, so that on March 26 cases were still increasing.</p>
+                  <br/>
+                  <br/><b>Iran</b>: Growth Active Cases (quadrat and polinomial regression equation with orde 5th), Total Deaths (exponential and polinomial regression equation with orde 5th).
+                  <br/><p>Iran is implement a social distancing policy, spraying public facilities and places, however did not implement a lockdown until March 24 after the number of deaths occurred high every day.</p>
+                  <br/>
+                  <br/><b>Spanyol</b>: Growth Active Cases (exponential and polinomial regression equation with orde 6th), Total Deaths (quadrat and polinomial regression equation with orde 6th).
+                  <br/><p>The increase in Covid-19 cases from day 0 to March 8 was relatively small both in terms of Active Cases and Total Deaths. However, on March 8 there was several demonstrations in Spain. After that, the number of cases increased quite high, so that on date March 12, lockdown was implemented. However, cases have not decreased until March 26 2020.</p>
+                  <br/>
+                  <br/><b>Jerman</b>: Growth Active Cases (exponential and polinomial regression equation with orde 5th), Total Deaths (quadrat and polinomial regression equation with orde 5th).
+                  <br/><p>Active cases in Germany are high, but total deaths are low (0.18%). Because of the government Germany moved quickly to carry out initial testing and then quarantine those who tested positive Covid-19, and better medical equipment. In addition, the majority of residents are over 60 years old, but most of those infected are aged 20-50 years.</p>
+                  <br/>
+                  <br/><b>Australia</b>: Growth Active Cases (exponential and polinomial regression equation with orde 5th), Total Deaths (quadrat and polinomial regression equation with orde 5th).
+                  <br/><p>Active Cases and Total deaths in Australia are relatively low. This is because the country of Australia has quite a large area although it has a large population, resulting in density of the population is low. Apart from that, in Australia there is also a local lockdown.</p>
+                  <br/>
+                  <br/><b>Amerika Serikat</b>: Growth Active Cases (exponential and polinomial regression equation with orde 5th), Total Deaths (exponential and polinomial regression equation with orde 5th).
+                  <br/><p>Cases in the United States are very high due to several factors. These factors including failed social distancing policies, limited PPE, and late lab testing.</p>
+                  <br/>
+                  <br/><b>Indonesia</b>: Growth Active Cases (exponential and polinomial regression equation with orde 6th), Total Deaths (quadrat and polinomial regression equation with orde 6th).
+                  <br/><p>Active Cases in Indonesia are increasing exponentially, while Total Deaths are increasing quadratically. In fact, Indonesia is the country that was recently infected with Covid-19, Indonesia should have taken greater anticipation. This increase is due to infection testing is still small. Apart from that, Indonesia did not impose a lockdown and lack of handling. So the recovery rate in Indonesia is small, while the level high mortality.</p>
+                  <br/>
                   
                 </div>
                 
             </ol>
+            <em>NB:The images above are just a few samples.</em>
           </div>
+          
         </div>
 
       </div>
