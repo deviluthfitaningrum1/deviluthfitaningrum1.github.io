@@ -259,7 +259,7 @@
                   <br/>SELECT id_matkul, COUNT(id_mahasiswa) as “jumlah_peserta”
                   <br/>FROM fact_aktivitas
                   GROUP BY (id_matkul)
-                  <br/>The algorithm commonly used for clustering is the K-Means algorithm.
+                  <br/><br/>The algorithm commonly used for clustering is the K-Means algorithm.
                   This algorithm begins by determining the desired number of clusters
                   existing datasets. In this experiment, the value k=3 was determined, it would form
                   3 clusters, C1, C2, and C3. Grouping based on course variables
@@ -283,6 +283,68 @@
                   <br/><b>favorite</b>: TIF215113, TIF215123
                   
 
+                  </p>
+                
+                </div>
+                
+              </div>
+              <div class="row gy-1">
+                <div class="col-lg-12">
+                  <div class="portfolio-info">
+                  <p align="justify"><b>Forecast of GPA</b>
+                  <br/>SELECT id_mahasiswa as “NIU”, nilai_matkul as “nilai”, sks_matkul as “sks”, nilai*sks
+                  as “total_nilai
+                  <br/>FROM fact_aktivitas, dim_matkul
+                  WHERE id_mahasiswa=440305 AND id_periode=20191
+                  GROUP BY(NIU)
+                  
+                  <br/><br/>The CGPA score cannot be increased instantly, but a stable and satisfactory GPA score is needed every semester. GPA is a variable
+                  response to time with semester periods so that it can be forecasted
+                  with time series forecast. The GPA score should not be
+                  forms a trend but changes occur smoothly, then the method
+                  The appropriate method is the exponential smoothing method. On exponential
+                  smoothing, the values ​​used to forecast GPA for the next semester are the previous GPA and forecast. This can minimize other influencing factors
+                  GPA in a certain period (outliers are formed) in the forecast calculation. GPA value
+                  The past period is given a weight ယ where 0 ≤ယ≤1.
+                  <br/><b>Forecast (t) = Forecast (t-1) + ယ*{Actual(t-1)-Forecast(t-1)}</b>
+                  <br/>The following is an example of a forecast calculation with a weight of ယ=0.2:
+                  
+                  
+                  <div class="portfolio-details-slider swiper">
+                    <div>
+                        <img src="assets/img/portfolio-5/Capture7.JPG" alt="">
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  Based on the exponential smoothing forecast, the possible Semester 7 GPA is obtained
+                  is 3.46. The forecast results from previous semesters are similar
+                  compared to the original data so it can be said that the forecast can represent the GPA of student with NIU 440305.
+
+                  </p>
+                
+                </div>
+                
+              </div>
+              <div class="row gy-1">
+                <div class="col-lg-12">
+                  <div class="portfolio-info">
+                  <p align="justify"><b>Association rule of course</b>
+                  <br/>SELECT id_mahasiswa as “NIU”, id_matkul
+                  FROM fact_aktivitas
+                  GROUP BY (id_mahasiswa)
+                  
+                  
+                  <br/><br/>To execute the association rule, the course taken by each student needs to be converted into cross-tabulated:
+                  
+                  <div class="portfolio-details-slider swiper">
+                    <div>
+                        <img src="assets/img/portfolio-5/Capture8.JPG" alt="">
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <br/>Many students take courses <b>TIF215123 and TIF215132 simultaneously</b>, while courses that <b>taken by almost all students is the TIF215132 course</b>.
                   </p>
                 
                 </div>
