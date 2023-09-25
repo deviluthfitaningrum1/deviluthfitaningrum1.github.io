@@ -119,35 +119,59 @@
         </div>
         <div class="row gy-4">
           <div class="portfolio-description">
-            <h2>Design data schema and analyze knowledge discovery in database (KDD) of Simaster UGM</h2>
+            <h2>Design data schema and analyze knowledge discovery in database (KDD) of Academic System Simaster UGM</h2>
             <p align="justify">
-              PT. Indofood Sukses Makmur Tbk is a company engaged in the food or beverage which was founded in 1990 with PT. Panganjaya Intikusuma. 
+              Simaster UGM is student academic system of Universitas Gadjah Mada. 
             </p>
             <strong>Big Data Skillset:</strong>
             <ol>
-              <li>Analyze business process and key performance indicator of company.</li>
-              <li>Design and build database schema.</li>
-              <li>Perform query for data analytics.</li>
+              <li>Analyze business process and data requirements.</li>
+              <li>Design database star schema.</li>
+              <li>Perform data mining to knowledge discovery.</li>
             </ol>
             <strong>Step:</strong>
             <ol>
-              <li>Analyze business process</li>
+              <li>Analyze business process and data requirements</li>
+              <br/>
+              <div class="col-lg-12">
+                <div class="portfolio-details-slider swiper">
+                  <div class="swiper-wrapper align-items-center">
+    
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio-5/Capture.JPG" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio-5/Capture1.JPG" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio-5/Capture2.JPG" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio-5/Capture3.JPG" alt="">
+                    </div>
+    
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <p align="center"><strong>Simaster UGM menu display</strong></p>
+              </div>
               
               
                 <div class="col-lg-12">
                   <p align="justify">
-                  <br/><b>Vision</b>: A Total Food Solution Company
-                  <br/><b>Missions</b>: To provide sustainable solutions for food needs, To continuously improve our people, processes and technologies, To contribute to the welfare of the society and environment in a sustainable manner, To continuously improve stakeholder values
-                  <br/><b>Values</b>: “With discipline as the basis of our way of life; 
-                  We conduct our business with integrity; 
-                  We treat our stakeholders with respect; and 
-                  together we unite to strive for excellence and continuous innovation.”
-                  <br/><b>Business Groups</b>: Consumer Branded Products (CBP), Bogasari, Agribusiness, and Distribution
+                  <br/><b>Business Process</b>:
+                  Graduates of university have a social and intellectual responsibility to become a member of society who has the high competencies include hard skill and soft skill. Therefore, a university needs to help graduates in good career planning. Simaster UGM has Academic Affairs and Career Alumni menu which really support their students in career planning. The process chosen in designing the star database schema is the <b>career planning process</b>. The design carried out will represent <b>the Symphony sub menu</b>, with needed additional data such as study results data.
+                  <br/><br/><b>Data Requirements</b>
+                  <br/><b>Profile menu</b>: Name, NIM, Study Program, Level and Class.
+                  <br/><b>Study results submenu</b>: Semester and year period, course code, courses, credits, and value.
+                  <br/><b>Curriculum Vitae submenu</b>: ID number, name of experience such as the name of the training attended, experience of the internship position, then
+                  explanatory description and time period of the experience.
+                  <br/><b></b>
                   </p>
                 </div>
                 
 
-              <li>Analyze Key Performance Indicator</li>
+              <!--li>Analyze Key Performance Indicator</li>
               
                 <div class="col-lg-12">
                     <p align="justify">
@@ -157,156 +181,113 @@
                     <br/><b>Internal business</b>: Supplier Lead Time, average time to distributor deliver order.
                     <br/><b>Learning and Growth</b>: Employee Productivity, operating income divide by the amount of employee.
                     </p>
-                </div>
+                </div-->
                 
               <li>Design database schema</li>
               <br/>
                 <div class="col-lg-12">
                   <p align="justify"><b>Tools: Draw.io<i class="bi-diagram-2"></i></b>
-                  <br/><b>Report and trend of sales analysis</b> require data input from various sources party in the company. Sales is process that includes distribution activities, services selling to buyers, and handling technical and non-technical complaints. Data that needed for detailed analysis are <b>product, time, customer, distributor, and brand as a dimension table of the sales fact table.</b> 
+                  <br/>The grain of the fact table is student activities inside and outside lectures.
                   </p>
                 </div>
                 <div class="col-lg-12">
                   <div class="portfolio-details-slider swiper">
-                    <div>
-                        <img src="assets/img/portfolio-5/portfolio-details-1.jpg" alt="">
+                    <div class="swiper-wrapper align-items-center">
+      
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio-5/portfolio-details-8.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/portfolio-5/portfolio-details-9.jpg" alt="">
+                      </div>
+                      
+      
                     </div>
-                    
                     <div class="swiper-pagination"></div>
                   </div>
                 </div>
-              <li>Perform Query</li>
-              <br/><b>Tools: SQL<i class="bx bxl-postgresql"></i></b>
-              <div class="row gy-3">
-                <div class="col-lg-9">
-                  <div class="portfolio-info">
-                  <p>
-                  <br/>SELECT product_name as product, quarter, city, SUM(quantity) as “sales_total” 
-                  <br/>FROM dim_product, dim_time, dim_distributor 
-                  <br/>GROUP BY CUBE (product, quarter, city) 
-                  ORDER BY product;
-                  </p>
-                  </div>
-                </div>
-                <div class="col-lg-2">
-                  <div class="portfolio-details-slider swiper">
-                  
-                    <div class="portfolio-details-slider swiper">
-                        <img src="assets/img/portfolio-5/portfolio-details-2.jpg" alt="">
-                    </div>
-                    
-                    <div class="swiper-pagination"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row gy-3">
-                <div class="col-lg-9">
-                  <div class="portfolio-info">
-                  <p><b>ROLL UP</b>
-                  <br/>SELECT product_name as product, year, province, SUM(quantity) as “sales_total” 
-                  <br/>FROM dim_product, dim_time, dim_distributor 
-                  <br/>GROUP BY CUBE (product, year, province) 
-                  ORDER BY product
-                  </p>
-                  </div>
-                </div>
-                <div class="col-lg-2">
-                  <div class="portfolio-details-slider swiper">
-                  
-                    <div class="portfolio-details-slider swiper">
-                        <img src="assets/img/portfolio-5/portfolio-details-3.jpg" alt="">
-                    </div>
-                    
-                    <div class="swiper-pagination"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row gy-3">
-                <div class="col-lg-9">
-                  <div class="portfolio-info">
-                  <p><b>DRILL DOWN</b>
-                  <br/>SELECT product_name as product, month, distributor_id, SUM(quantity) as “sales_total” 
-                  <br/>FROM dim_product, dim_time, fact_sales 
-                  <br/>GROUP BY CUBE (product, month, distributor_id) 
-                  ORDER BY product
-                  </p>
-                  </div>
-                </div>
-                <div class="col-lg-2">
-                  <div class="portfolio-details-slider swiper">
-                  
-                    <div class="portfolio-details-slider swiper">
-                        <img src="assets/img/portfolio-5/portfolio-details-4.jpg" alt="">
-                    </div>
-                    
-                    <div class="swiper-pagination"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row gy-3">
-                <div class="col-lg-9">
-                  <div class="portfolio-info">
-                  <p><b>SLICE & DICE</b>
-                  <br/>SELECT product_name as product, quarter, city, 
-                  SUM(quantity) as “sales_total” 
-                  <br/>FROM dim_product, dim_time, dim_distributor
-                  <br/>WHERE product = ”Indomie” , city = “Magelang” or “Semarang” 
-                  <br/>GROUP BY (product, quarter, city) 
-                  ORDER BY quarter
-                  </p>
-                  </div>
-                </div>
-                <div class="col-lg-2">
-                  <div class="portfolio-details-slider swiper">
-                  
-                    <div>
-                        <img src="assets/img/portfolio-5/portfolio-details-5.jpg" alt="">
-                    </div>
-                    
-                    <div class="swiper-pagination"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row gy-3">
-                <div class="col-lg-9">
-                  <div class="portfolio-info">
-                  <p><b>PIVOT</b>
-                  <br/>SELECT product_name as product, city, quarter
-                  SUM(quantity) as “sales_total”
-                  <br/>FROM dim_product, dim_time, dim_distributor
-                 <br/>WHERE product = ”Indomie” , city = “Magelang” or “Semarang”
-                 <br/>GROUP BY (product, city, quarter) ORDER BY city
-                  </p>
-                  </div>
-                </div>
-                <div class="col-lg-2">
-                  <div class="portfolio-details-slider swiper">
-                  
-                    <div>
-                        <img src="assets/img/portfolio-5/portfolio-details-6.jpg" alt="">
-                    </div>
-                    
-                    <div class="swiper-pagination"></div>
-                  </div>
-                </div>
-              </div>
-              <br/>
-              <li>Data storytelling</li>
-              <br/>
+
+              <li>Perform data mining to knowledge discovery</li>
+              <br/><b>Tools: SQL, Python, Big Data tools (Apache, etc)<i class="bx bxs-data"></i></b>
+              <br/><br/>
+              <div class="row gy-1">
                 <div class="col-lg-12">
-                  <p align="justify">
-                  <b>Operating Income</b> each brand can be obtained from an OLAP query on price data and sales quantity at each distributor within a certain time span operated by reducing the initial calculation of capital. 
-                  <br/><b>Customer Retention</b> can be obtained from OLAP queries by comparing customer data in each time period. This can identify whether the company can retain customers or not.
-                  <br/><b>On Time Delivery</b> can be obtained from time data and order status to measure the percentage of orders on time. 
-                  <br/><b>Number Complaints</b> each brand can be obtained by querying OLAP data on the number of complaints taken at a certain time span at each distributor who directly interacts with customers.
-                  <br/><b>Sales Return</b> each brand can be obtained by OLAP query data on order returns taken at certain time intervals at each distributor who directly interacts with customers.
-                  <br/><b>Customer Acquisition</b> can be obtained from OLAP queries by comparing customer data in each time period. This can identify whether the company can get new customers or not. 
-                  <br/><b>Supplier Lead Time</b> can be obtained from time and order status data to measure the average time  to complete orders. 
-                  <br/><b>Employee Productivity</b> can be obtained from operating income data by calculating the total number of employees.
-          
+                  <div class="portfolio-info">
+                  <p align="justify"><b>Classification of student's CGPA prediction</b>
+                  <br/>SELECT id_mahasiswa as “NIU”, nama_mahasiswa as “Nama”, nilai_matkul as “nilai”,
+                  sks_matkul as “sks”, nilai*sks as “total_nilai
+                  <br/>FROM fact_aktivitas, dim_mahasiswa, dim_matkul
+                  GROUP BY(NIU)
+                  <div class="portfolio-details-slider swiper">
+                    <div>
+                        <img src="assets/img/portfolio-5/Capture4.JPG" alt="">
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  Based on the stages of data selection, pre-processing, data cleaning and transformation, the dataset concept is needed for student classification
+                  based on CGPA predicate groups are as follows:
+                  <div class="portfolio-details-slider swiper">
+                   <div>
+                      <img src="assets/img/portfolio-5/Capture5.JPG" alt="">
+                    </div>
+  
+                      <div class="swiper-pagination"></div>
+                  </div>
+                  The dataset containing ID, name and IP is split every semester into a training dataset
+                  and test. The algorithm commonly used for classification is the K-Nearest Neighbour algorithm. In this algorithm, classifications that already exist in the training data can be used
+                  for prediction of unclassified data. This algorithm finds
+                  group K in the training data is closest to the test data and continues
+                  search for specific class labels. Testing the best k value based on the highest accuracy
+                  carried out using test data. The classification results with the algorithm are compared
+                  with classified data. The following is an example of the process of finding the k value using
+                  highest accuracy.
+                  <br/>Predictions are carried out <b>at the end of each semester to forecast the CGPA</b>. The forecast will help students in preparing
+                  strategy for achieving the desired CGPA target. So students will be motivated
+                  to <b>improve grades in the next semester</b>.
+
                   </p>
-                  
+                  </div>
                 </div>
+                
+              </div>
+              <br/>
+              <div class="row gy-1">
+                <div class="col-lg-12">
+                  <div class="portfolio-info">
+                  <p align="justify"><b>Clustering of career path course</b>
+                  <br/>SELECT id_matkul, COUNT(id_mahasiswa) as “jumlah_peserta”
+                  <br/>FROM fact_aktivitas
+                  GROUP BY (id_matkul)
+                  <br/>The algorithm commonly used for clustering is the K-Means algorithm.
+                  This algorithm begins by determining the desired number of clusters
+                  existing datasets. In this experiment, the value k=3 was determined, it would form
+                  3 clusters, C1, C2, and C3. Grouping based on course variables
+                  unfavorite, moderate, and favorite. 
+                  The initial centroid is determined randomly, example <b>C1=12 students, C2=30 students, and C3=80 students</b>. Then, using the Euclidean Distance formula, the distance between the data and the centroid is calculated.
+                  
+                  
+                  <div class="portfolio-details-slider swiper">
+                    <div>
+                        <img src="assets/img/portfolio-5/Capture6.JPG" alt="">
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  Clusters are obtained from centroids that have a <b>minimum distance from data on the number of students</b>. The K-Means algorithm works <b>iteratively with centroid changes</b>
+                  until the cluster members do not change. The centroid value in the next iteration is calculated
+                  from the average data from cluster members in the previous iteration.
+                  <br/><br/><b>Clustering of first iteration</b>
+                  <br/><b>unfavorite</b>: TIF215112, TIF215122, TIF215124, TIF215134.
+                  <br/><b>moderate</b>: TIF215111, TIF215114, TIF215121, TIF215131, TIF215132, TIF215133
+                  <br/><b>favorite</b>: TIF215113, TIF215123
+                  
+
+                  </p>
+                
+                </div>
+                
+              </div>
                 
                 
             </ol>

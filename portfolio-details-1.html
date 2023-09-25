@@ -157,7 +157,7 @@
               <li>Exploratory Data Analysis</li>
               <br/>
                 <div class="col-lg-12">
-                  <p><b>Tools: MySQL<i class="bx bxl-postgresql"></i></b>
+                  <p><b>Tools: MySQL<i class="bx bxs-data"></i></b>
                   <br/>Normalize raw data
                   <br/><b>mysql></b>select * from pengguna;
                   <br/><b>mysql></b>select * from pembelian;
@@ -191,7 +191,7 @@
               <li>Perform Query</li>
               <br/>
                 <div class="col-lg-12">
-                  <p><b>Tools: MySQL<i class="bx bxl-postgresql"></i></b>
+                  <p><b>Tools: MySQL<i class="bx bxs-data"></i></b>
                   <br/><b>mysql></b>select nama_game, tanggal_rilis from game order by tanggal_rilis desc limit 5;
                   <br/><b>mysql></b>select game.nama_game, pembelian.tanggal_pembelian from game join beligame on game.id_game=beligame.id_game join pembelian on pembelian.id_pembelian=beligame.id pembelian order by tanggal pembelian desc limit 5;
                   <br/><b>mysql></b>select pengguna.nama_pengguna, count(*) from pengguna join pembelian on pengguna.id_pengguna=pembelian.id_pengguna join beligame on pembelian.id_pembelian=beligame.id_pembelian group by nama_pengguna order by count(*) asc limit 3;
@@ -219,7 +219,7 @@
               <li>Data storytelling</li>
               <br/>
                 <div class="col-lg-12">
-                  <b>Tools: MySQL<i class="bx bxl-postgresql"></i></b>
+                  <b>Tools: MySQL<i class="bx bxs-data"></i></b>
                   <br/><b>5 latest games</b> which can display in <b>recommended new games</b>: borderlands, respect, ori, melvor idle, monster hunter.
                   <br/><b>5 last purchased games</b> which can display in <b>recommended games</b>: the crew, pacman, cuphead, neighbours, gears.
                   <br/><b>Promo notifications</b> can be sent <b>to the fewest game users</b>: Ridwan Ardian, Anindya Luth, Aqilla Citrani.
