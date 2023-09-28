@@ -173,7 +173,7 @@
               <br/>
                 <div class="col-lg-12">
                   <p align="justify"><b>Tools: Java Mapreduce, Apache Hadoop, Apache Pig <i class="bx bxl-java"></i></b>
-                    <br/><b>see the number of each type of plant sorted by the number of plant descendingly</b>
+                    <br/><br/><b>see the number of each type of plant sorted by the number of plant descendingly</b>
                     <br/><b>grunt></b> asetinfo = FOREACH(GROUP aglonema BY jenis_aglonema) GENERATE group AS nama_aglonema, SUM(aglonema.jumlah) as jumlah_per_jenis;
                     <br/><b>grunt></b> describe asetinfo;
                     <br/><b>asetinfo:</b> {nama_aglonema: chararray, jumlah_per_jenis: long}
